@@ -12,7 +12,7 @@ import Foundation
 class UpdateSellerVC: UIViewController,UIPickerViewDelegate, UIPickerViewDataSource {
     
     
-    @IBOutlet weak var fotoPerfil: UIImageView!
+    @IBOutlet weak var profilePhoto: UIImageView!
     
     @IBOutlet weak var localPicker: UIPickerView!
     
@@ -43,17 +43,17 @@ class UpdateSellerVC: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
         super.viewDidLoad()
         
         //bloco de codigo para deixar a imagem do perfil redonda
-        fotoPerfil.layer.borderWidth=1.0
-        fotoPerfil.layer.masksToBounds = false
-        fotoPerfil.layer.borderColor = UIColor.blackColor().CGColor
-        fotoPerfil.layer.cornerRadius = 13
-        fotoPerfil.layer.cornerRadius = fotoPerfil.frame.size.height/2
-        fotoPerfil.clipsToBounds = true
+        profilePhoto.layer.borderWidth=1.0
+        profilePhoto.layer.masksToBounds = false
+        profilePhoto.layer.borderColor = UIColor.blackColor().CGColor
+        profilePhoto.layer.cornerRadius = 13
+        profilePhoto.layer.cornerRadius = profilePhoto.frame.size.height/2
+        profilePhoto.clipsToBounds = true
         
         
     }
     
-    @IBAction func saveInformation(sender: AnyObject) {
+    @IBAction func saveInformation(sender: UIButton) {
         
         var currentSeller: Seller
         
@@ -64,8 +64,11 @@ class UpdateSellerVC: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
         var nameSeller = nameField.text as String
         var status: Bool = self.setStatus(statusSwitch)
         
-        currentSeller = Seller(login: "", password: "", photo: fotoPerfil.image!, name: nameSeller, category: categorySeller, description: descriptionProducts, online: status)
-        DataAllSeller.sharedInstance.sellers.append(currentSeller)
+        currentSeller = Seller(login: "", password: "", photo: profilePhoto.image!, name: nameSeller, category: categorySeller, description: descriptionProducts, online: status)
+//        DataSeller.sharedInstance.sellers.append(currentSeller)
+        
+        
+        var dao:DAOSellers = DAOSellers()
         
         
         

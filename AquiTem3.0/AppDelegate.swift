@@ -19,8 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         var tabBarController = UITabBarController()
         
-        var sellerListVC = MapVC (nibName: "MapVC", bundle: nil)
-        var custumerNavigationController = UINavigationController(rootViewController: sellerListVC)
+        var mapVC = MapVC (nibName: "MapVC", bundle: nil)
+        var custumerNavigationController = UINavigationController(rootViewController: mapVC)
         
         var loginVC = LoginVC(nibName: "LoginVC", bundle: nil)
         var sellerNavigationController = UINavigationController(rootViewController: loginVC)

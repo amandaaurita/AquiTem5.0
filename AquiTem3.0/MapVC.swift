@@ -10,8 +10,6 @@ import UIKit
 
 class MapVC: UIViewController {
 
-    var filteredSellers:[Seller] = []
-    var filter:Filter?
     let places: [String] = ["Edifício Cardeal Leme","Edifício Frings","Edifício Kennedy","Edifício Leonel Franca","Vila dos Diretórios","Rio Data Centro","Bosque","Estacionamento","Terminal"]
     
     @IBOutlet weak var place1: UILabel!
@@ -27,45 +25,25 @@ class MapVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if(self.filter==nil)
-        {self.filter = Filter()
-        }
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "refresh:",name:"load", object: nil)
         
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title:"Filtro", style:UIBarButtonItemStyle.Bordered, target:self, action:"filterTapped")
         
-        self.filteredSellers = self.getFilteredSellers()
         
+        DataSeller.sharedInstance.updateData()
         self.printResults()
     }
 
-    func filterTapped(){
+    func refresh(notification: NSNotification)
+    {
+        DataSeller.sharedInstance.updateData()
+        self.printResults()
+    }
+    
+    private func filterTapped(){
     
         var nextController = FilterVC(nibName: "FilterVC", bundle:nil)
-        nextController.filter = self.filter
         navigationController?.pushViewController(nextController, animated: true)
-    }
-    
-    func getFilteredSellers() -> [Seller]
-    {
-        var onlineSellers:[Seller] = self.getOnlineSellers()
-        var result:[Seller] = self.filter!.applyFilter(onlineSellers)
-        return result
-    }
-    
-    func getOnlineSellers() -> [Seller]
-    {
-        var dao:DAOSellers = DAOSellers()
-        var allSellers:[Seller] = dao.getAllSellers()
-        var onlineSellers:[Seller] = []
-        
-        for index in 0...allSellers.count - 1
-        {
-            if (allSellers[index].online == true)
-            {
-                onlineSellers.append(allSellers[index])
-            }
-        }
-        return onlineSellers
     }
     
     private func printResults()
@@ -73,21 +51,23 @@ class MapVC: UIViewController {
         var placesLabel: [UILabel] = [self.place1, self.place2, self.place3, self.place4, self.place5, self.place6, self.place7, self.place8, self.place9]
         var placesNumber: [Int] = [0, 0, 0, 0, 0, 0, 0, 0, 0]
         
-        for indexSeller in 0...self.filteredSellers.count - 1
+       
+        
+        for indexSeller in 0..<DataSeller.sharedInstance.filteredOnlineSellers.count
         {
-            for index in 0...self.places.count - 1
+            for index in 0..<self.places.count
             {
-                if (self.filteredSellers[indexSeller].mainPlace == self.places[index])
+                if (DataSeller.sharedInstance.filteredOnlineSellers[indexSeller].mainPlace == self.places[index])
                 {
                     placesNumber[index]++
                     break
                 }
             }
         }
-        
-        for index in 0...self.places.count - 1
+
+        for index in 0..<self.places.count
         {
-            placesLabel[index].text = "\(placesNumber[index]) vendedores"
+            placesLabel[index].text = "\(placesNumber[index])"
         }
     }
 
@@ -95,12 +75,12 @@ class MapVC: UIViewController {
     {
         var sellersInPlace:[Seller] = []
         
-        for index in 0...self.filteredSellers.count - 1
+        for index in 0..<DataSeller.sharedInstance.filteredOnlineSellers.count
         {
-            if (self.filteredSellers[index].mainPlace == sender.currentTitle)
+            if (DataSeller.sharedInstance.filteredOnlineSellers[index].mainPlace == sender.currentTitle)
             {
-                println(self.filteredSellers[index].name)
-                sellersInPlace.append(self.filteredSellers[index])
+                println(DataSeller.sharedInstance.filteredOnlineSellers[index].name)
+                sellersInPlace.append(DataSeller.sharedInstance.filteredOnlineSellers[index])
             }
         }
         

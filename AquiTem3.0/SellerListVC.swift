@@ -12,10 +12,12 @@ import UIKit
 
 class SellerListVC: UITableViewController {
    
-    var sellers: [Seller] = []
+    var sellers: [Seller] = DataSeller.sharedInstance.onlineSellers
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.tableFooterView = UIView(frame:CGRectZero)
         
     }
 

@@ -48,7 +48,7 @@ public class DAOSellers
 
     //MARK: FUNCAO VENDEDORES FALSOS
     
-    func fakeSellers() -> [Seller]
+    private func fakeSellers() -> [Seller]
     {
         
         var Mateus:Seller = Seller(login: "Mateus", password: "Mateus", photo:UIImage(named:"Mateus.png")!, name: "Mateus", category: "Quentinha", description: "Vendo quentinhas baratas, apenas 7 reais", online: true)

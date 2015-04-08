@@ -12,7 +12,7 @@ import UIKit
 
 class FilterVC: UIViewController {
 
-    var filter:Filter?
+  //  var filter:Filter?
     @IBOutlet weak var category1: UISwitch!
     @IBOutlet weak var category2: UISwitch!
     @IBOutlet weak var category3: UISwitch!
@@ -21,31 +21,30 @@ class FilterVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.updateSwitches(self.filter!)
+        self.updateSwitches(DataSeller.sharedInstance.filter)
     }
     
-    func recordFilter() -> Filter
+    func recordFilter()
     {
         var filter:Filter = Filter()
         
         var switchs: [UISwitch] = [self.category1, self.category2, self.category3, self.category4]
-        for index in 0...filter.state.count - 1{
-            filter.state[filter.title[index]] = switchs[index].on
+        for index in 0..<DataSeller.sharedInstance.filter.state.count{
+            DataSeller.sharedInstance.filter.state[DataSeller.sharedInstance.filter.title[index]] = switchs[index].on
         }
-        return filter
     }
         
     func updateSwitches(filter:Filter)
     {
         var switchs: [UISwitch] = [self.category1, self.category2, self.category3, self.category4]
-        for index in 0...filter.state.count - 1{
-            switchs[index].on = filter.state[filter.title[index]]!
+        for index in 0..<DataSeller.sharedInstance.filter.state.count{
+            switchs[index].on = DataSeller.sharedInstance.filter.state[DataSeller.sharedInstance.filter.title[index]]!
         }
     }
     @IBAction func applyFilterTapped(sender: UIButton) {
-        self.filter = recordFilter()
-        var nextController = MapVC(nibName: "MapVC", bundle:nil)
-        nextController.filter = self.filter
-        navigationController?.pushViewController(nextController, animated: true)
+ //       self.filter = recordFilter()
+        self.recordFilter()
+        NSNotificationCenter.defaultCenter().postNotificationName("load", object: nil)
+        navigationController?.popViewControllerAnimated(true)
     }
 }
