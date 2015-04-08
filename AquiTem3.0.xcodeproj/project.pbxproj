@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F1A9B8C1AC31B9400DAD703 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1A9B8B1AC31B9400DAD703 /* AppDelegate.swift */; };
+		3F1A9B951AC31B9400DAD703 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F1A9B941AC31B9400DAD703 /* Images.xcassets */; };
+		3F1A9B981AC31B9400DAD703 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F1A9B961AC31B9400DAD703 /* LaunchScreen.xib */; };
+		3F1A9BA41AC31B9400DAD703 /* AquiTem3_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1A9BA31AC31B9400DAD703 /* AquiTem3_0Tests.swift */; };
+		3F1A9BB91AC3273C00DAD703 /* Seller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1A9BB81AC3273C00DAD703 /* Seller.swift */; };
+		3F1A9BBF1AC3506100DAD703 /* DAOSellers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1A9BBE1AC3506100DAD703 /* DAOSellers.swift */; };
+		3F1A9BD11AC456FE00DAD703 /* UpdateSellerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1A9BD01AC456FE00DAD703 /* UpdateSellerVC.swift */; };
+		3F1A9BD31AC4578E00DAD703 /* UpdateSellerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F1A9BD21AC4578E00DAD703 /* UpdateSellerVC.xib */; };
+		3F677D491AD5A4AB00BCF588 /* DataAllSellers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F677D481AD5A4AB00BCF588 /* DataAllSellers.swift */; };
+		3FA94EC71ACAE3C0001CAD82 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA94EC61ACAE3C0001CAD82 /* User.swift */; };
+		EAB7B56A1AD44F1A00D21615 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB7B5691AD44F1A00D21615 /* Filter.swift */; };
+		EAB7B56D1AD44F4900D21615 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB7B56B1AD44F4900D21615 /* MapVC.swift */; };
+		EAB7B56E1AD44F4900D21615 /* MapVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAB7B56C1AD44F4900D21615 /* MapVC.xib */; };
+		EAB7B5711AD4507F00D21615 /* SellerProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB7B56F1AD4507F00D21615 /* SellerProfileVC.swift */; };
+		EAB7B5721AD4507F00D21615 /* SellerProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAB7B5701AD4507F00D21615 /* SellerProfileVC.xib */; };
+		EAB7B5751AD4510600D21615 /* SettingSellerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB7B5731AD4510600D21615 /* SettingSellerVC.swift */; };
+		EAB7B5761AD4510600D21615 /* SettingSellerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAB7B5741AD4510600D21615 /* SettingSellerVC.xib */; };
+		EAB7B57D1AD4525700D21615 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB7B57B1AD4525700D21615 /* SignUpVC.swift */; };
+		EAB7B57E1AD4525700D21615 /* SignUpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAB7B57C1AD4525700D21615 /* SignUpVC.xib */; };
+		EAB7B5811AD4527100D21615 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB7B57F1AD4527100D21615 /* LoginVC.swift */; };
+		EAB7B5821AD4527100D21615 /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAB7B5801AD4527100D21615 /* LoginVC.xib */; };
+		EAB7B5851AD4529E00D21615 /* FilterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB7B5831AD4529E00D21615 /* FilterVC.swift */; };
+		EAB7B5861AD4529E00D21615 /* FilterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAB7B5841AD4529E00D21615 /* FilterVC.xib */; };
+		F3BC796F1AC9A2C8003E7FE0 /* SellerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BC796D1AC9A2C8003E7FE0 /* SellerListVC.swift */; };
+		F3BC79701AC9A2C8003E7FE0 /* SellerListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3BC796E1AC9A2C8003E7FE0 /* SellerListVC.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F1A9B9E1AC31B9400DAD703 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F1A9B7E1AC31B9400DAD703 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F1A9B851AC31B9400DAD703;
+			remoteInfo = AquiTem3.0;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F1A9B861AC31B9400DAD703 /* AquiTem3.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AquiTem3.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F1A9B8A1AC31B9400DAD703 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F1A9B8B1AC31B9400DAD703 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3F1A9B941AC31B9400DAD703 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3F1A9B971AC31B9400DAD703 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3F1A9B9D1AC31B9400DAD703 /* AquiTem3.0Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AquiTem3.0Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F1A9BA21AC31B9400DAD703 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F1A9BA31AC31B9400DAD703 /* AquiTem3_0Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquiTem3_0Tests.swift; sourceTree = "<group>"; };
+		3F1A9BB81AC3273C00DAD703 /* Seller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Seller.swift; sourceTree = "<group>"; };
+		3F1A9BBE1AC3506100DAD703 /* DAOSellers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAOSellers.swift; sourceTree = "<group>"; };
+		3F1A9BD01AC456FE00DAD703 /* UpdateSellerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateSellerVC.swift; sourceTree = "<group>"; };
+		3F1A9BD21AC4578E00DAD703 /* UpdateSellerVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UpdateSellerVC.xib; sourceTree = "<group>"; };
+		3F677D481AD5A4AB00BCF588 /* DataAllSellers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataAllSellers.swift; sourceTree = "<group>"; };
+		3FA94EC61ACAE3C0001CAD82 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EAB7B5691AD44F1A00D21615 /* Filter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		EAB7B56B1AD44F4900D21615 /* MapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		EAB7B56C1AD44F4900D21615 /* MapVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapVC.xib; sourceTree = "<group>"; };
+		EAB7B56F1AD4507F00D21615 /* SellerProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerProfileVC.swift; sourceTree = "<group>"; };
+		EAB7B5701AD4507F00D21615 /* SellerProfileVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SellerProfileVC.xib; sourceTree = "<group>"; };
+		EAB7B5731AD4510600D21615 /* SettingSellerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingSellerVC.swift; sourceTree = "<group>"; };
+		EAB7B5741AD4510600D21615 /* SettingSellerVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingSellerVC.xib; sourceTree = "<group>"; };
+		EAB7B57B1AD4525700D21615 /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		EAB7B57C1AD4525700D21615 /* SignUpVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpVC.xib; sourceTree = "<group>"; };
+		EAB7B57F1AD4527100D21615 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginVC.swift; path = ../LoginVC.swift; sourceTree = "<group>"; };
+		EAB7B5801AD4527100D21615 /* LoginVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginVC.xib; path = ../LoginVC.xib; sourceTree = "<group>"; };
+		EAB7B5831AD4529E00D21615 /* FilterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilterVC.swift; path = ../FilterVC.swift; sourceTree = "<group>"; };
+		EAB7B5841AD4529E00D21615 /* FilterVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FilterVC.xib; path = ../FilterVC.xib; sourceTree = "<group>"; };
+		F3BC796D1AC9A2C8003E7FE0 /* SellerListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerListVC.swift; sourceTree = "<group>"; };
+		F3BC796E1AC9A2C8003E7FE0 /* SellerListVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SellerListVC.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F1A9B831AC31B9400DAD703 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F1A9B9A1AC31B9400DAD703 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F1A9B7D1AC31B9400DAD703 = {
+			isa = PBXGroup;
+			children = (
+				3F1A9B881AC31B9400DAD703 /* AquiTem3.0 */,
+				3F1A9BA01AC31B9400DAD703 /* AquiTem3.0Tests */,
+				3F1A9B871AC31B9400DAD703 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F1A9B871AC31B9400DAD703 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F1A9B861AC31B9400DAD703 /* AquiTem3.0.app */,
+				3F1A9B9D1AC31B9400DAD703 /* AquiTem3.0Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F1A9B881AC31B9400DAD703 /* AquiTem3.0 */ = {
+			isa = PBXGroup;
+			children = (
+				3F1A9B961AC31B9400DAD703 /* LaunchScreen.xib */,
+				3F1A9B8B1AC31B9400DAD703 /* AppDelegate.swift */,
+				3F1A9BB31AC3216800DAD703 /* Model */,
+				3F1A9BB41AC3217B00DAD703 /* Controller */,
+				3F1A9BB71AC324D600DAD703 /* View */,
+				3F1A9B941AC31B9400DAD703 /* Images.xcassets */,
+				3F1A9B891AC31B9400DAD703 /* Supporting Files */,
+			);
+			path = AquiTem3.0;
+			sourceTree = "<group>";
+		};
+		3F1A9B891AC31B9400DAD703 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F1A9B8A1AC31B9400DAD703 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3F1A9BA01AC31B9400DAD703 /* AquiTem3.0Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3F1A9BA31AC31B9400DAD703 /* AquiTem3_0Tests.swift */,
+				3F1A9BA11AC31B9400DAD703 /* Supporting Files */,
+			);
+			path = AquiTem3.0Tests;
+			sourceTree = "<group>";
+		};
+		3F1A9BA11AC31B9400DAD703 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F1A9BA21AC31B9400DAD703 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3F1A9BB31AC3216800DAD703 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3F1A9BBE1AC3506100DAD703 /* DAOSellers.swift */,
+				3FA94EC61ACAE3C0001CAD82 /* User.swift */,
+				3F1A9BB81AC3273C00DAD703 /* Seller.swift */,
+				EAB7B5691AD44F1A00D21615 /* Filter.swift */,
+				3F677D481AD5A4AB00BCF588 /* DataAllSellers.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3F1A9BB41AC3217B00DAD703 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EAB7B5871AD452F600D21615 /* First Tab */,
+				EAB7B5891AD4534F00D21615 /* Second Tab */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3F1A9BB71AC324D600DAD703 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EAB7B58A1AD4536600D21615 /* First Tab */,
+				EAB7B58B1AD453A800D21615 /* Second Tab */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		EAB7B5871AD452F600D21615 /* First Tab */ = {
+			isa = PBXGroup;
+			children = (
+				EAB7B56B1AD44F4900D21615 /* MapVC.swift */,
+				EAB7B5831AD4529E00D21615 /* FilterVC.swift */,
+				F3BC796D1AC9A2C8003E7FE0 /* SellerListVC.swift */,
+				EAB7B56F1AD4507F00D21615 /* SellerProfileVC.swift */,
+			);
+			name = "First Tab";
+			sourceTree = "<group>";
+		};
+		EAB7B5891AD4534F00D21615 /* Second Tab */ = {
+			isa = PBXGroup;
+			children = (
+				EAB7B57F1AD4527100D21615 /* LoginVC.swift */,
+				EAB7B57B1AD4525700D21615 /* SignUpVC.swift */,
+				EAB7B5731AD4510600D21615 /* SettingSellerVC.swift */,
+				3F1A9BD01AC456FE00DAD703 /* UpdateSellerVC.swift */,
+			);
+			name = "Second Tab";
+			sourceTree = "<group>";
+		};
+		EAB7B58A1AD4536600D21615 /* First Tab */ = {
+			isa = PBXGroup;
+			children = (
+				EAB7B56C1AD44F4900D21615 /* MapVC.xib */,
+				EAB7B5841AD4529E00D21615 /* FilterVC.xib */,
+				F3BC796E1AC9A2C8003E7FE0 /* SellerListVC.xib */,
+				EAB7B5701AD4507F00D21615 /* SellerProfileVC.xib */,
+			);
+			name = "First Tab";
+			sourceTree = "<group>";
+		};
+		EAB7B58B1AD453A800D21615 /* Second Tab */ = {
+			isa = PBXGroup;
+			children = (
+				EAB7B5801AD4527100D21615 /* LoginVC.xib */,
+				EAB7B57C1AD4525700D21615 /* SignUpVC.xib */,
+				EAB7B5741AD4510600D21615 /* SettingSellerVC.xib */,
+				3F1A9BD21AC4578E00DAD703 /* UpdateSellerVC.xib */,
+			);
+			name = "Second Tab";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F1A9B851AC31B9400DAD703 /* AquiTem3.0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F1A9BA71AC31B9400DAD703 /* Build configuration list for PBXNativeTarget "AquiTem3.0" */;
+			buildPhases = (
+				3F1A9B821AC31B9400DAD703 /* Sources */,
+				3F1A9B831AC31B9400DAD703 /* Frameworks */,
+				3F1A9B841AC31B9400DAD703 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AquiTem3.0;
+			productName = AquiTem3.0;
+			productReference = 3F1A9B861AC31B9400DAD703 /* AquiTem3.0.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F1A9B9C1AC31B9400DAD703 /* AquiTem3.0Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F1A9BAA1AC31B9400DAD703 /* Build configuration list for PBXNativeTarget "AquiTem3.0Tests" */;
+			buildPhases = (
+				3F1A9B991AC31B9400DAD703 /* Sources */,
+				3F1A9B9A1AC31B9400DAD703 /* Frameworks */,
+				3F1A9B9B1AC31B9400DAD703 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F1A9B9F1AC31B9400DAD703 /* PBXTargetDependency */,
+			);
+			name = AquiTem3.0Tests;
+			productName = AquiTem3.0Tests;
+			productReference = 3F1A9B9D1AC31B9400DAD703 /* AquiTem3.0Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F1A9B7E1AC31B9400DAD703 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Amanda Aurita Araujo Fernandes";
+				TargetAttributes = {
+					3F1A9B851AC31B9400DAD703 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					3F1A9B9C1AC31B9400DAD703 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 3F1A9B851AC31B9400DAD703;
+					};
+				};
+			};
+			buildConfigurationList = 3F1A9B811AC31B9400DAD703 /* Build configuration list for PBXProject "AquiTem3.0" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F1A9B7D1AC31B9400DAD703;
+			productRefGroup = 3F1A9B871AC31B9400DAD703 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F1A9B851AC31B9400DAD703 /* AquiTem3.0 */,
+				3F1A9B9C1AC31B9400DAD703 /* AquiTem3.0Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F1A9B841AC31B9400DAD703 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAB7B5721AD4507F00D21615 /* SellerProfileVC.xib in Resources */,
+				EAB7B5761AD4510600D21615 /* SettingSellerVC.xib in Resources */,
+				3F1A9B981AC31B9400DAD703 /* LaunchScreen.xib in Resources */,
+				F3BC79701AC9A2C8003E7FE0 /* SellerListVC.xib in Resources */,
+				EAB7B5861AD4529E00D21615 /* FilterVC.xib in Resources */,
+				3F1A9B951AC31B9400DAD703 /* Images.xcassets in Resources */,
+				EAB7B56E1AD44F4900D21615 /* MapVC.xib in Resources */,
+				EAB7B5821AD4527100D21615 /* LoginVC.xib in Resources */,
+				EAB7B57E1AD4525700D21615 /* SignUpVC.xib in Resources */,
+				3F1A9BD31AC4578E00DAD703 /* UpdateSellerVC.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F1A9B9B1AC31B9400DAD703 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F1A9B821AC31B9400DAD703 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAB7B56A1AD44F1A00D21615 /* Filter.swift in Sources */,
+				EAB7B5751AD4510600D21615 /* SettingSellerVC.swift in Sources */,
+				EAB7B5811AD4527100D21615 /* LoginVC.swift in Sources */,
+				3F1A9B8C1AC31B9400DAD703 /* AppDelegate.swift in Sources */,
+				3F1A9BBF1AC3506100DAD703 /* DAOSellers.swift in Sources */,
+				EAB7B57D1AD4525700D21615 /* SignUpVC.swift in Sources */,
+				3F677D491AD5A4AB00BCF588 /* DataAllSellers.swift in Sources */,
+				EAB7B5851AD4529E00D21615 /* FilterVC.swift in Sources */,
+				F3BC796F1AC9A2C8003E7FE0 /* SellerListVC.swift in Sources */,
+				3FA94EC71ACAE3C0001CAD82 /* User.swift in Sources */,
+				EAB7B5711AD4507F00D21615 /* SellerProfileVC.swift in Sources */,
+				EAB7B56D1AD44F4900D21615 /* MapVC.swift in Sources */,
+				3F1A9BD11AC456FE00DAD703 /* UpdateSellerVC.swift in Sources */,
+				3F1A9BB91AC3273C00DAD703 /* Seller.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F1A9B991AC31B9400DAD703 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F1A9BA41AC31B9400DAD703 /* AquiTem3_0Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F1A9B9F1AC31B9400DAD703 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F1A9B851AC31B9400DAD703 /* AquiTem3.0 */;
+			targetProxy = 3F1A9B9E1AC31B9400DAD703 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3F1A9B961AC31B9400DAD703 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F1A9B971AC31B9400DAD703 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F1A9BA51AC31B9400DAD703 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3F1A9BA61AC31B9400DAD703 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F1A9BA81AC31B9400DAD703 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AquiTem3.0/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3F1A9BA91AC31B9400DAD703 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AquiTem3.0/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3F1A9BAB1AC31B9400DAD703 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AquiTem3.0Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AquiTem3.0.app/AquiTem3.0";
+			};
+			name = Debug;
+		};
+		3F1A9BAC1AC31B9400DAD703 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AquiTem3.0Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AquiTem3.0.app/AquiTem3.0";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F1A9B811AC31B9400DAD703 /* Build configuration list for PBXProject "AquiTem3.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F1A9BA51AC31B9400DAD703 /* Debug */,
+				3F1A9BA61AC31B9400DAD703 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F1A9BA71AC31B9400DAD703 /* Build configuration list for PBXNativeTarget "AquiTem3.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F1A9BA81AC31B9400DAD703 /* Debug */,
+				3F1A9BA91AC31B9400DAD703 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F1A9BAA1AC31B9400DAD703 /* Build configuration list for PBXNativeTarget "AquiTem3.0Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F1A9BAB1AC31B9400DAD703 /* Debug */,
+				3F1A9BAC1AC31B9400DAD703 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F1A9B7E1AC31B9400DAD703 /* Project object */;
+}
