@@ -10,15 +10,41 @@ import UIKit
 
 class LoginVC: UIViewController {
 
+    @IBOutlet weak var usernameField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        navigationController?.navigationBar.topItem?.title = "Entrar"
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func loginTapped(sender: UIButton) {
+       
+        var dao:DAOSellers = DAOSellers()
+        var sellers: [Seller] = dao.getAllSellers()
+        var result: Seller?
+        for index in 0..<sellers.count{
+            if(sellers[index].login == usernameField.text){
+                result = sellers[index]
+                
+                self.usernameField.text = ""
+                self.passwordField.text = ""
+                var nextController = UpdateSellerVC(nibName: "UpdateSellerVC", bundle: nil)
+                nextController.seller = result
+                navigationController?.pushViewController(nextController, animated: true)
+            }
+        }
     }
+    
+    @IBAction func registerTapped(sender: UIButton) {
+        
+        self.usernameField.text = ""
+        self.passwordField.text = ""
+        var nextController = SignUpVC(nibName: "SignUpVC", bundle: nil)
+        navigationController?.pushViewController(nextController, animated: true)
+        
+    }
+    
 
 }

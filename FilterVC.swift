@@ -12,7 +12,6 @@ import UIKit
 
 class FilterVC: UIViewController {
 
-  //  var filter:Filter?
     @IBOutlet weak var category1: UISwitch!
     @IBOutlet weak var category2: UISwitch!
     @IBOutlet weak var category3: UISwitch!
@@ -21,6 +20,10 @@ class FilterVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.title = "Filtro"
+        
+        self.navigationController?.navigationBarHidden = false
+        
         self.updateSwitches(DataSeller.sharedInstance.filter)
     }
     
@@ -42,7 +45,7 @@ class FilterVC: UIViewController {
         }
     }
     @IBAction func applyFilterTapped(sender: UIButton) {
- //       self.filter = recordFilter()
+
         self.recordFilter()
         NSNotificationCenter.defaultCenter().postNotificationName("load", object: nil)
         navigationController?.popViewControllerAnimated(true)

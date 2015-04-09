@@ -36,45 +36,62 @@ public class DAOSellers
     
     func setSeller(Seller) -> Bool
     {
-        return false
+        return true
     }
     
-    func updateSeller(Seller) -> Bool
-    {
-        return false
-    }
+//    func verifyLogin(username:String, password:String) -> Bool
+//    {
+//        var sellers = getAllSellers()
+//        for index in 0..<sellers.count{
+//            if(sellers[index].name == username){
+//                return true
+//            }else{
+//                return false
+//        }
+//    }
+//    
+//    func getSeller(username:String) ->Seller
+//    {
+//        var sellers: [Seller] = self.getAllSellers()
+//        var result: Seller?
+//        for index in 0..<sellers.count{
+//            if(sellers[index].name == username){
+//                result = sellers[index]
+//            }
+//        }
+//        return result!
+//    }
     
-
 
     //MARK: FUNCAO VENDEDORES FALSOS
     
-    private func fakeSellers() -> [Seller]
+    func fakeSellers() -> [Seller]
     {
         
         var Mateus:Seller = Seller(login: "Mateus", password: "Mateus", photo:UIImage(named:"Mateus.png")!, name: "Mateus", category: "Quentinha", description: "Vendo quentinhas baratas, apenas 7 reais", online: true)
         Mateus.brand = "Marmitas Boladas"
         Mateus.phone = "99416-8032"
-        Mateus.mainPlace = "Edifício Cardeal Leme"
+        Mateus.mainPlace = "Cardeal Leme"
         Mateus.secondaryPlace = "Sala 252"
     
         var Amanda:Seller = Seller(login: "Amanda", password: "Amanda", photo:UIImage(named:"Amanda.png")!, name: "Amanda", category: "Doce", description: "Os únicos docinhos reais do aplicativo", online: true)
         Amanda.brand = "Tutti Doces"
         Amanda.phone = "99416-8032"
-        Amanda.mainPlace = "Edifício Frings"
+        Amanda.mainPlace = "Frings e Kennedy"
         Amanda.secondaryPlace = "Sala 103"
         
         
         var Mayara:Seller = Seller(login: "Mayara", password: "Mayara", photo:UIImage(named:"Mayara.png")!, name: "Mayara", category: "Maromba", description: "Variedade de comida, tudo com Whey!", online: true)
         Mayara.brand = "Maromba Food"
         Mayara.phone = "99416-8032"
-        Mayara.mainPlace = "Edifício Frings"
+        Mayara.mainPlace = "Frings e Kennedy"
         Mayara.secondaryPlace = "Bandejão"
         
         
         var Emanoel:Seller = Seller(login: "Emanoel", password: "Emanoel", photo:UIImage(named:"Emanoel.png")!, name: "Emanoel", category: "Suco", description: "Sucos mofados por apenas 2,50", online: true)
         Emanoel.brand = "Sucos Mofados"
         Emanoel.phone = "99416-8032"
-        Emanoel.mainPlace = "Edifício Kennedy"
+        Emanoel.mainPlace = "Vila"
         Emanoel.secondaryPlace = "Pilotis"
         
         

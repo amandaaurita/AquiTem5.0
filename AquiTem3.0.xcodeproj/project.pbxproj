@@ -22,14 +22,13 @@
 		EAB7B56E1AD44F4900D21615 /* MapVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAB7B56C1AD44F4900D21615 /* MapVC.xib */; };
 		EAB7B5711AD4507F00D21615 /* SellerProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB7B56F1AD4507F00D21615 /* SellerProfileVC.swift */; };
 		EAB7B5721AD4507F00D21615 /* SellerProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAB7B5701AD4507F00D21615 /* SellerProfileVC.xib */; };
-		EAB7B5751AD4510600D21615 /* SettingSellerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB7B5731AD4510600D21615 /* SettingSellerVC.swift */; };
-		EAB7B5761AD4510600D21615 /* SettingSellerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAB7B5741AD4510600D21615 /* SettingSellerVC.xib */; };
 		EAB7B57D1AD4525700D21615 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB7B57B1AD4525700D21615 /* SignUpVC.swift */; };
 		EAB7B57E1AD4525700D21615 /* SignUpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAB7B57C1AD4525700D21615 /* SignUpVC.xib */; };
 		EAB7B5811AD4527100D21615 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB7B57F1AD4527100D21615 /* LoginVC.swift */; };
 		EAB7B5821AD4527100D21615 /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAB7B5801AD4527100D21615 /* LoginVC.xib */; };
 		EAB7B5851AD4529E00D21615 /* FilterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB7B5831AD4529E00D21615 /* FilterVC.swift */; };
 		EAB7B5861AD4529E00D21615 /* FilterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAB7B5841AD4529E00D21615 /* FilterVC.xib */; };
+		EAFDB41B1AD69A390037B559 /* Mapa.png in Resources */ = {isa = PBXBuildFile; fileRef = EAFDB41A1AD69A390037B559 /* Mapa.png */; };
 		F3BC796F1AC9A2C8003E7FE0 /* SellerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BC796D1AC9A2C8003E7FE0 /* SellerListVC.swift */; };
 		F3BC79701AC9A2C8003E7FE0 /* SellerListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3BC796E1AC9A2C8003E7FE0 /* SellerListVC.xib */; };
 /* End PBXBuildFile section */
@@ -64,14 +63,13 @@
 		EAB7B56C1AD44F4900D21615 /* MapVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapVC.xib; sourceTree = "<group>"; };
 		EAB7B56F1AD4507F00D21615 /* SellerProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerProfileVC.swift; sourceTree = "<group>"; };
 		EAB7B5701AD4507F00D21615 /* SellerProfileVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SellerProfileVC.xib; sourceTree = "<group>"; };
-		EAB7B5731AD4510600D21615 /* SettingSellerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingSellerVC.swift; sourceTree = "<group>"; };
-		EAB7B5741AD4510600D21615 /* SettingSellerVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingSellerVC.xib; sourceTree = "<group>"; };
 		EAB7B57B1AD4525700D21615 /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		EAB7B57C1AD4525700D21615 /* SignUpVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpVC.xib; sourceTree = "<group>"; };
 		EAB7B57F1AD4527100D21615 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginVC.swift; path = ../LoginVC.swift; sourceTree = "<group>"; };
 		EAB7B5801AD4527100D21615 /* LoginVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginVC.xib; path = ../LoginVC.xib; sourceTree = "<group>"; };
 		EAB7B5831AD4529E00D21615 /* FilterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilterVC.swift; path = ../FilterVC.swift; sourceTree = "<group>"; };
 		EAB7B5841AD4529E00D21615 /* FilterVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FilterVC.xib; path = ../FilterVC.xib; sourceTree = "<group>"; };
+		EAFDB41A1AD69A390037B559 /* Mapa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mapa.png; sourceTree = "<group>"; };
 		F3BC796D1AC9A2C8003E7FE0 /* SellerListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerListVC.swift; sourceTree = "<group>"; };
 		F3BC796E1AC9A2C8003E7FE0 /* SellerListVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SellerListVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -129,6 +127,7 @@
 		3F1A9B891AC31B9400DAD703 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EAFDB41A1AD69A390037B559 /* Mapa.png */,
 				3F1A9B8A1AC31B9400DAD703 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -168,6 +167,7 @@
 			children = (
 				EAB7B5871AD452F600D21615 /* First Tab */,
 				EAB7B5891AD4534F00D21615 /* Second Tab */,
+				EAFDB4181AD634A50037B559 /* Third Tab */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -177,6 +177,7 @@
 			children = (
 				EAB7B58A1AD4536600D21615 /* First Tab */,
 				EAB7B58B1AD453A800D21615 /* Second Tab */,
+				EAFDB4191AD6350F0037B559 /* Third Tab */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -186,8 +187,6 @@
 			children = (
 				EAB7B56B1AD44F4900D21615 /* MapVC.swift */,
 				EAB7B5831AD4529E00D21615 /* FilterVC.swift */,
-				F3BC796D1AC9A2C8003E7FE0 /* SellerListVC.swift */,
-				EAB7B56F1AD4507F00D21615 /* SellerProfileVC.swift */,
 			);
 			name = "First Tab";
 			sourceTree = "<group>";
@@ -195,10 +194,8 @@
 		EAB7B5891AD4534F00D21615 /* Second Tab */ = {
 			isa = PBXGroup;
 			children = (
-				EAB7B57F1AD4527100D21615 /* LoginVC.swift */,
-				EAB7B57B1AD4525700D21615 /* SignUpVC.swift */,
-				EAB7B5731AD4510600D21615 /* SettingSellerVC.swift */,
-				3F1A9BD01AC456FE00DAD703 /* UpdateSellerVC.swift */,
+				F3BC796D1AC9A2C8003E7FE0 /* SellerListVC.swift */,
+				EAB7B56F1AD4507F00D21615 /* SellerProfileVC.swift */,
 			);
 			name = "Second Tab";
 			sourceTree = "<group>";
@@ -208,8 +205,6 @@
 			children = (
 				EAB7B56C1AD44F4900D21615 /* MapVC.xib */,
 				EAB7B5841AD4529E00D21615 /* FilterVC.xib */,
-				F3BC796E1AC9A2C8003E7FE0 /* SellerListVC.xib */,
-				EAB7B5701AD4507F00D21615 /* SellerProfileVC.xib */,
 			);
 			name = "First Tab";
 			sourceTree = "<group>";
@@ -217,12 +212,30 @@
 		EAB7B58B1AD453A800D21615 /* Second Tab */ = {
 			isa = PBXGroup;
 			children = (
-				EAB7B5801AD4527100D21615 /* LoginVC.xib */,
-				EAB7B57C1AD4525700D21615 /* SignUpVC.xib */,
-				EAB7B5741AD4510600D21615 /* SettingSellerVC.xib */,
-				3F1A9BD21AC4578E00DAD703 /* UpdateSellerVC.xib */,
+				F3BC796E1AC9A2C8003E7FE0 /* SellerListVC.xib */,
+				EAB7B5701AD4507F00D21615 /* SellerProfileVC.xib */,
 			);
 			name = "Second Tab";
+			sourceTree = "<group>";
+		};
+		EAFDB4181AD634A50037B559 /* Third Tab */ = {
+			isa = PBXGroup;
+			children = (
+				EAB7B57F1AD4527100D21615 /* LoginVC.swift */,
+				EAB7B57B1AD4525700D21615 /* SignUpVC.swift */,
+				3F1A9BD01AC456FE00DAD703 /* UpdateSellerVC.swift */,
+			);
+			name = "Third Tab";
+			sourceTree = "<group>";
+		};
+		EAFDB4191AD6350F0037B559 /* Third Tab */ = {
+			isa = PBXGroup;
+			children = (
+				EAB7B5801AD4527100D21615 /* LoginVC.xib */,
+				EAB7B57C1AD4525700D21615 /* SignUpVC.xib */,
+				3F1A9BD21AC4578E00DAD703 /* UpdateSellerVC.xib */,
+			);
+			name = "Third Tab";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,8 +319,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAB7B5721AD4507F00D21615 /* SellerProfileVC.xib in Resources */,
-				EAB7B5761AD4510600D21615 /* SettingSellerVC.xib in Resources */,
 				3F1A9B981AC31B9400DAD703 /* LaunchScreen.xib in Resources */,
+				EAFDB41B1AD69A390037B559 /* Mapa.png in Resources */,
 				F3BC79701AC9A2C8003E7FE0 /* SellerListVC.xib in Resources */,
 				EAB7B5861AD4529E00D21615 /* FilterVC.xib in Resources */,
 				3F1A9B951AC31B9400DAD703 /* Images.xcassets in Resources */,
@@ -333,7 +346,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAB7B56A1AD44F1A00D21615 /* Filter.swift in Sources */,
-				EAB7B5751AD4510600D21615 /* SettingSellerVC.swift in Sources */,
 				EAB7B5811AD4527100D21615 /* LoginVC.swift in Sources */,
 				3F1A9B8C1AC31B9400DAD703 /* AppDelegate.swift in Sources */,
 				3F1A9BBF1AC3506100DAD703 /* DAOSellers.swift in Sources */,

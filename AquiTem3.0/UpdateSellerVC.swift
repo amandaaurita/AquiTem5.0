@@ -12,6 +12,8 @@ import Foundation
 class UpdateSellerVC: UIViewController,UIPickerViewDelegate, UIPickerViewDataSource {
     
     
+    var seller:Seller?
+    
     @IBOutlet weak var profilePhoto: UIImageView!
     
     @IBOutlet weak var localPicker: UIPickerView!
@@ -32,15 +34,13 @@ class UpdateSellerVC: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
     
     
     //vetor com nomes dos locais que ficarão no picker view
-    var local = ["Bandejão","Biblioteca","Campo de Futebol","CCE","CouveFlor","Edificio Garagem","Edificio Kennedy","Edificio TecGraf"," Estacionamento","Frings","Genesis","Ginasio","Gourmet","IAG","Igreja","IMA"," ITUC","LAB SEM","LABGrad","Leme","Leonel Franca","LEV","RDC","Salas de arte","SOLAR","SPA","Tendas de arte","Terminal PUC-RIO","Vila"]
-    
-    
-    
-    
+    var local = ["Cardeal Leme","Frings e Kennedy","Padre Leonel Franca","Vila","Rio Data Centro","Bosque","Escola de Negócios","Estacionamento","Terminal"]
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        
         
         //bloco de codigo para deixar a imagem do perfil redonda
         profilePhoto.layer.borderWidth=1.0
@@ -55,37 +55,37 @@ class UpdateSellerVC: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
     
     @IBAction func saveInformation(sender: UIButton) {
         
-        var currentSeller: Seller
+//        var currentSeller: Seller
         
-        var brandNameSeller = brandField.text as String
-        var categorySeller = categoryField.text as String
-        var descriptionProducts = descriptionField.text as String
-        //   currentSeller.mainPlace =   pickerView(localPicker, self.numberOfComponentsInPickerView(localPicker),1)
-        var nameSeller = nameField.text as String
-        var status: Bool = self.setStatus(statusSwitch)
+//        var brandNameSeller = brandField.text as String
+//        var categorySeller = categoryField.text as String
+//        var descriptionProducts = descriptionField.text as String
+//        //   currentSeller.mainPlace =   pickerView(localPicker, self.numberOfComponentsInPickerView(localPicker),1)
+//        var nameSeller = nameField.text as String
+//        var status: Bool = self.setStatus(statusSwitch)
         
-        currentSeller = Seller(login: "", password: "", photo: profilePhoto.image!, name: nameSeller, category: categorySeller, description: descriptionProducts, online: status)
-//        DataSeller.sharedInstance.sellers.append(currentSeller)
+        var currentSeller = Seller(login: "User", password: "User", photo: profilePhoto.image!, name: self.nameField.text, category: self.categoryField.text, description: self.descriptionField.text, online: self.statusSwitch.on)
+        
+        currentSeller.phone = telephoneField.text
+        currentSeller.mainPlace = pickerView(localPicker, titleForRow: self.numberOfComponentsInPickerView(localPicker),forComponent: 1)
+        currentSeller.secondaryPlace = self.secundaryLocal.text
+
+        //        DataSeller.sharedInstance.sellers.append(currentSeller)
         
         
-        var dao:DAOSellers = DAOSellers()
-        
-        
-        
-        
-        
+
     }
     
-    func setStatus(componentswitch: UISwitch)->Bool{
-        if(componentswitch.on)
-        {
-            return true
-        }
-        else
-        {
-            return false
-        }
-    }
+//    func setStatus(componentSwitch: UISwitch)->Bool{
+//        if(componentSwitch.on == true)
+//        {
+//            return true
+//        }
+//        else
+//        {
+//            return false
+//        }
+//    }
     
     
     
@@ -104,5 +104,5 @@ class UpdateSellerVC: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
     {
         return local[row]
     }
-    
+
 }

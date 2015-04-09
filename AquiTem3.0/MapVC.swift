@@ -10,7 +10,7 @@ import UIKit
 
 class MapVC: UIViewController {
 
-    let places: [String] = ["Edifício Cardeal Leme","Edifício Frings","Edifício Kennedy","Edifício Leonel Franca","Vila dos Diretórios","Rio Data Centro","Bosque","Estacionamento","Terminal"]
+    let places: [String] = ["Cardeal Leme","Frings e Kennedy","Padre Leonel Franca","Vila","Rio Data Centro","Bosque","Escola de Negócios","Estacionamento","Terminal"]
     
     @IBOutlet weak var place1: UILabel!
     @IBOutlet weak var place2: UILabel!
@@ -25,10 +25,13 @@ class MapVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationController?.navigationBar.topItem?.title = "Mapa"
+        
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "refresh:",name:"load", object: nil)
         
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title:"Filtro", style:UIBarButtonItemStyle.Bordered, target:self, action:"filterTapped")
+      //  navigationController?.navigationBarHidden = true
         
+      //  self.navigationItem.rightBarButtonItem = UIBarButtonItem(title:"Filtro", style:UIBarButtonItemStyle.Bordered, target:self, action:"filterTapped")
         
         DataSeller.sharedInstance.updateData()
         self.printResults()
@@ -40,8 +43,7 @@ class MapVC: UIViewController {
         self.printResults()
     }
     
-    private func filterTapped(){
-    
+    @IBAction func filterTapped(sender: UIButton) {
         var nextController = FilterVC(nibName: "FilterVC", bundle:nil)
         navigationController?.pushViewController(nextController, animated: true)
     }
