@@ -27,7 +27,7 @@ class SellerProfileVC: UIViewController {
 
         self.title = self.seller?.name
         
-        self.photo = UIImageView(image: UIImage(named:"Mayara.png"))
+//        self.photo = UIImageView(image: UIImage(named:"Mayara.png"))
         self.name.text = self.seller?.name
         self.brand.text = self.seller?.brand
         self.category.text = self.seller?.category
@@ -35,6 +35,11 @@ class SellerProfileVC: UIViewController {
         self.mainPlace.text = self.seller?.mainPlace
         self.secondaryPlace.text = self.seller?.secondaryPlace
         self.descriptionSeller.text = self.seller?.description
+        
+        let photoName = self.seller?.photo
+        let photoView = UIImageView(image: photoName)
+        photoView.frame = CGRect(x: 50, y: 100, width: 100, height: 100)
+        view.addSubview(photoView)
     }
 
     
