@@ -10,6 +10,8 @@
 	<string>AquiTem3.0</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>72BAC34789832A4751E0AF5DDB1BC2AE74C9A2CF</key>
+		<string>https://github.com/amandaaurita/AquiTem5.0.git</string>
 		<key>9D939736CD23F48C60A719594F3F15940AB09013</key>
 		<string>https://github.com/amandaaurita/AquiTem3.1.git</string>
 	</dict>
@@ -17,15 +19,17 @@
 	<string>AquiTem3.0.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>9D939736CD23F48C60A719594F3F15940AB09013</key>
+		<key>72BAC34789832A4751E0AF5DDB1BC2AE74C9A2CF</key>
 		<string>../..</string>
+		<key>9D939736CD23F48C60A719594F3F15940AB09013</key>
+		<string>../../../AquiTem3.1</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/amandaaurita/AquiTem3.1.git</string>
+	<string>https://github.com/amandaaurita/AquiTem5.0.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>9D939736CD23F48C60A719594F3F15940AB09013</string>
+	<string>72BAC34789832A4751E0AF5DDB1BC2AE74C9A2CF</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -35,6 +39,14 @@
 			<string>9D939736CD23F48C60A719594F3F15940AB09013</string>
 			<key>IDESourceControlWCCName</key>
 			<string>AquiTem3.1</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>72BAC34789832A4751E0AF5DDB1BC2AE74C9A2CF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AquiTem5.0</string>
 		</dict>
 	</array>
 </dict>
