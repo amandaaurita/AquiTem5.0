@@ -10,15 +10,22 @@ import UIKit
 
 class SignUpVC: UIViewController {
 
+    @IBOutlet weak var usernameField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var passwordConfirmField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.title = "Cadastro"
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func registerTapped(sender: UIButton) {
+        
+        self.usernameField.text = ""
+        self.passwordField.text = ""
+        self.passwordConfirmField.text = ""
+        var nextController = UpdateSellerVC(nibName: "UpdateSellerVC", bundle: nil)
+        navigationController?.pushViewController(nextController, animated: true)
+        
     }
-
 }

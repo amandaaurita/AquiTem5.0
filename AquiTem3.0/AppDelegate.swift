@@ -18,23 +18,37 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
         var tabBarController = UITabBarController()
+        tabBarController.tabBar.barStyle = UIBarStyle.Black
+        tabBarController.tabBar.tintColor = UIColor.yellowColor()
         
-        var sellerListVC = MapVC (nibName: "MapVC", bundle: nil)
-        var custumerNavigationController = UINavigationController(rootViewController: sellerListVC)
+        var mapVC = MapVC (nibName: "MapVC", bundle: nil)
+        var custumerNavigationController = UINavigationController(rootViewController: mapVC)
+        custumerNavigationController.navigationBar.barStyle = UIBarStyle.Black
+        custumerNavigationController.navigationBar.tintColor = UIColor.yellowColor()
+        
+        var sellerListVC = SellerListVC(nibName: "SellerListVC", bundle: nil)
+        var catalogNavigationController = UINavigationController(rootViewController: sellerListVC)
+        catalogNavigationController.navigationBar.barStyle = UIBarStyle.Black
+        catalogNavigationController.navigationBar.tintColor = UIColor.yellowColor()
         
         var loginVC = LoginVC(nibName: "LoginVC", bundle: nil)
         var sellerNavigationController = UINavigationController(rootViewController: loginVC)
+        sellerNavigationController.navigationBar.barStyle = UIBarStyle.Black
+        sellerNavigationController.navigationBar.tintColor = UIColor.yellowColor()
         
-        var controllers = [custumerNavigationController, sellerNavigationController]
+        var controllers = [custumerNavigationController, catalogNavigationController, sellerNavigationController]
         tabBarController.viewControllers = controllers
         
         let tabItems = tabBarController.tabBar.items as [UITabBarItem]
         let tabItem0 = tabItems[0] as UITabBarItem
         let tabItem1 = tabItems[1] as UITabBarItem
+        let tabItem2 = tabItems[2] as UITabBarItem
         tabItem0.title = "Mapa"
-        tabItem1.title = "Vender"
-//        tabItem0.image = UIImage(named:".png")
-//        tabItem1.image = UIImage(named:".png")
+        tabItem1.title = "Catálogo"
+        tabItem2.title = "Vender"
+        tabItem0.image = UIImage(named:"Icone1.png")
+        tabItem1.image = UIImage(named:"Icone2.png")
+        tabItem2.image = UIImage(named:"Icone3.png")
 
         self.window.rootViewController = tabBarController
         self.window.makeKeyAndVisible()

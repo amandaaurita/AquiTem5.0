@@ -18,7 +18,7 @@ class Filter: NSObject {
         var result:[Seller] = []
         
         for element in sellers{
-            for index in 0...self.title.count - 1{
+            for index in 0..<self.title.count{
                 if(element.category == self.title[index] && self.state[self.title[index]] == true){
                     result.append(element)
                     break

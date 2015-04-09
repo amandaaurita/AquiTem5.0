@@ -66,6 +66,7 @@ public class DAOSellers
     
     func setSeller(vendedor:Seller) -> Bool
     {
+<<<<<<< HEAD
         var login = vendedor.login
         var password = vendedor.password
         var name = vendedor.name
@@ -118,6 +119,35 @@ public class DAOSellers
         return false;
         
     }
+=======
+        return true
+    }
+    
+//    func verifyLogin(username:String, password:String) -> Bool
+//    {
+//        var sellers = getAllSellers()
+//        for index in 0..<sellers.count{
+//            if(sellers[index].name == username){
+//                return true
+//            }else{
+//                return false
+//        }
+//    }
+//    
+//    func getSeller(username:String) ->Seller
+//    {
+//        var sellers: [Seller] = self.getAllSellers()
+//        var result: Seller?
+//        for index in 0..<sellers.count{
+//            if(sellers[index].name == username){
+//                result = sellers[index]
+//            }
+//        }
+//        return result!
+//    }
+    
+
+>>>>>>> origin/master
     //MARK: FUNCAO VENDEDORES FALSOS
     
     func fakeSellers() -> [Seller]
@@ -126,27 +156,43 @@ public class DAOSellers
         var Mateus:Seller = Seller(login: "Mateus", password: "Mateus", photo:UIImage(named:"Mateus.png")!, name: "Mateus", category: "Quentinha", description: "Vendo quentinhas baratas, apenas 7 reais", online: true)
         Mateus.brand = "Marmitas Boladas"
         Mateus.phone = "99416-8032"
+<<<<<<< HEAD
         Mateus.mainPlace = "Ed. Cardeal Leme"
+=======
+        Mateus.mainPlace = "Cardeal Leme"
+>>>>>>> origin/master
         Mateus.secondaryPlace = "Sala 252"
         
         var Amanda:Seller = Seller(login: "Amanda", password: "Amanda", photo:UIImage(named:"Amanda.png")!, name: "Amanda", category: "Doce", description: "Os únicos docinhos reais do aplicativo", online: true)
         Amanda.brand = "Tutti Doces"
         Amanda.phone = "99416-8032"
+<<<<<<< HEAD
         Amanda.mainPlace = "Ed. Frings"
+=======
+        Amanda.mainPlace = "Frings e Kennedy"
+>>>>>>> origin/master
         Amanda.secondaryPlace = "Sala 103"
         
         
         var Mayara:Seller = Seller(login: "Mayara", password: "Mayara", photo:UIImage(named:"Mayara.png")!, name: "Mayara", category: "Maromba", description: "Variedade de comida, tudo com Whey!", online: true)
         Mayara.brand = "Maromba Food"
         Mayara.phone = "99416-8032"
+<<<<<<< HEAD
         Mayara.mainPlace = "Ed. Frings"
+=======
+        Mayara.mainPlace = "Frings e Kennedy"
+>>>>>>> origin/master
         Mayara.secondaryPlace = "Bandejão"
         
         
         var Emanoel:Seller = Seller(login: "Emanoel", password: "Emanoel", photo:UIImage(named:"Emanoel.png")!, name: "Emanoel", category: "Suco", description: "Sucos mofados por apenas 2,50", online: true)
         Emanoel.brand = "Sucos Mofados"
         Emanoel.phone = "99416-8032"
+<<<<<<< HEAD
         Emanoel.mainPlace = "Ed. Kennedy"
+=======
+        Emanoel.mainPlace = "Vila"
+>>>>>>> origin/master
         Emanoel.secondaryPlace = "Pilotis"
         
         
